@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=django_kafka
+POSTGRES_USER=FgKAGKisiYatsRZaHjYWgioCAtKpGSRh
+POSTGRES_PASSWORD=cDibt48iqxLo1IHqG6doRDrvXcx9lyQhnAZopY2qEs5uIn9h4LqyJmkNZCEEUwFe

@@ -1,0 +1,5 @@
+[run]
+include = django_kafka/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
