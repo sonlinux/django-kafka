@@ -9,7 +9,7 @@ import pprint
 SETTINGS = {
     'bootstrap.servers': '127.0.0.1:9092',
     'group.id': 'mygroup',
-    # 'client.id': 'client-1',
+    'client.id': 'client-1',
     'enable.auto.commit': True,
     'session.timeout.ms': 6000,
     'default.topic.config': {'auto.offset.reset': 'smallest'}
