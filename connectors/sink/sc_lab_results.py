@@ -1,5 +1,11 @@
+__author__="Alison Mukoma"
+__date__="20/06/2019"
+__license__="MIT"
+
+
 from confluent_kafka import Consumer, KafkaError
 import pprint
+
 settings = {
     'bootstrap.servers': '127.0.0.1:9092',
     'group.id': 'mygroup',

@@ -1,3 +1,7 @@
+__author__="Alison Mukoma"
+__date__="20/06/2019"
+__license__="MIT"
+
 from confluent_kafka import Producer
 import pprint
 
