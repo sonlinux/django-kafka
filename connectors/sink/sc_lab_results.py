@@ -17,7 +17,7 @@ SETTINGS = {
 def data_consumer():
     c = Consumer(SETTINGS)
 
-    c.subscribe(['twitter-streams'])
+    c.subscribe(['testing-hl7'])
 
     try:
         while True:
@@ -26,9 +26,8 @@ def data_consumer():
                 continue
             elif not msg.error():
                 pprint.pprint('Online::Received message: {0}'.format(msg.value()))
-                print
                 pprint.pprint("================= Streaming Live data From kafka To sonlinux ================")
-                print 
+
             elif msg.error().code() == KafkaError._PARTITION_EOF:
                 pprint.pprint('End of partition reached {0}/{1}'
                       .format(msg.topic(), msg.partition()))
@@ -40,5 +39,5 @@ def data_consumer():
 
     finally:
         c.close()
-        
+
 data_consumer()
